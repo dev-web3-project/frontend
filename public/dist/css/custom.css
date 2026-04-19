@@ -1,0 +1,175 @@
+/* =============================================
+   HTB THEME - Hack The Box Green Color System
+   Primary: #9fef00 (HTB Neon Green)
+   Dark:    #141d2b (HTB Dark Background)
+   ============================================= */
+
+:root {
+  --htb-green: #9fef00;
+  --htb-green-dark: #7bc800;
+  --htb-green-dim: rgba(159, 239, 0, 0.15);
+  --htb-dark: #141d2b;
+  --htb-card: #1a2332;
+}
+
+/* =========================
+   SPINNER
+   ========================= */
+.custom-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* =========================
+   DATATABLE BUTTONS - replace blue with HTB green
+   ========================= */
+#faculty-table_wrapper .btn-secondary,
+#faculty-departments-table_wrapper .btn-secondary,
+#department-table_wrapper .btn-secondary,
+#courses-department-table_wrapper .btn-secondary,
+#department-courses-table_wrapper .btn-secondary,
+#course-table_wrapper .btn-secondary,
+#course-modules-table_wrapper .btn-secondary,
+#module-table_wrapper .btn-secondary,
+#student-table_wrapper .btn-secondary,
+#lecturer-table_wrapper .btn-secondary {
+  background-color: var(--htb-green) !important;
+  color: #141d2b !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+#faculty-table_wrapper .btn-secondary:hover,
+#faculty-departments-table_wrapper .btn-secondary:hover,
+#department-table_wrapper .btn-secondary:hover,
+#courses-department-table_wrapper .btn-secondary:hover,
+#department-courses-table_wrapper .btn-secondary:hover,
+#course-table_wrapper .btn-secondary:hover,
+#course-modules-table_wrapper .btn-secondary:hover,
+#module-table_wrapper .btn-secondary:hover,
+#student-table_wrapper .btn-secondary:hover,
+#lecturer-table_wrapper .btn-secondary:hover {
+  background-color: var(--htb-green-dark) !important;
+}
+
+/* =========================
+   GLOBAL btn-primary → green
+   ========================= */
+.btn-primary {
+  background-color: var(--htb-green) !important;
+  border-color: var(--htb-green) !important;
+  color: #141d2b !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: var(--htb-green-dark) !important;
+  border-color: var(--htb-green-dark) !important;
+  color: #141d2b !important;
+}
+
+/* Nav tabs and pills active states are handled in index.css */
+/* No conflicting overrides here */
+
+
+/* =========================
+   CURSOR POINTER helper
+   ========================= */
+.button-cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* =========================
+   CONFIRM MODAL
+   ========================= */
+.modal-confirm {
+  color: #636363;
+  width: 400px;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.modal-confirm .modal-body {
+  color: #999;
+}
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+  color: #999;
+}
+.modal-confirm .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 9;
+  text-align: center;
+  border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+  color: #f15e5e;
+  font-size: 46px;
+  display: inline-block;
+  margin-top: 13px;
+}
+.modal-confirm .btn {
+  color: #141d2b;
+  border-radius: 4px;
+  background: var(--htb-green);
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  min-width: 120px;
+  border: none;
+  min-height: 40px;
+  margin: 0 5px;
+  outline: none !important;
+}
+.modal-confirm .btn-info {
+  background: #c1c1c1;
+  color: #333;
+}
+.modal-confirm .btn-info:hover,
+.modal-confirm .btn-info:focus {
+  background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+  background: #f15e5e;
+  color: #fff;
+}
+.modal-confirm .btn-danger:hover,
+.modal-confirm .btn-danger:focus {
+  background: #ee3535;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
