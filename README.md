@@ -16,12 +16,12 @@ Il est développé en React avec TypeScript et communique avec les microservices
 
 1. Clonez ce dépôt :
 ```bash
-git clone https://github.com/dev-web3-project/lms-frontend.git
+git clone https://github.com/dev-web3-project/frontend.git
 ```
 
 2. Installez les dépendances :
 ```bash
-cd lms-frontend
+cd frontend
 npm install
 ```
 
